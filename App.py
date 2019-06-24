@@ -20,15 +20,18 @@ def predict():
     # predictor = Prediction()
     # model, vectorizer = predictor.prediction()
     # result = predictor.predict(data['input'], model, vectorizer)
-    #
     # return jsonify(result)
 
    text = request.form["input"]
    predictor = Prediction()
    model, vectorizer = predictor.prediction()
    result = predictor.predict(text, model, vectorizer)
-   return render_template("result.html",result = result)
+   if result == 1:
+       str = "Positive Review"
+   else:
+       str = "Negative Review"
+   return render_template("result.html",result = str)
 
 
 if __name__ == '__main__':
-	app.run(port= 6002,debug=True)
+	app.run(port= 6003,debug=True)
