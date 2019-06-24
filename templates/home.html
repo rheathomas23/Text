@@ -1,0 +1,42 @@
+<!--<DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <form action="/predict" method="POST" id = "review_form" style="position:absolute;top:35%;left:40%;width:100px;height:50px;">
+        Enter a Review : <br><input type="text" name="input" style="height:50px; width:400px"/><br>
+      <button type="submit" form="review_form" value="Submit">Submit</button>
+    </form>
+  </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2><center>Sentiment Analysis</center></h2>
+            <form action = "/predict" method = "POST" id = "review_form">
+                <div class="form-group">
+                    <label style = "position: relative; top = 50%">Enter a Review : </label>
+                    <input type="text" name = "input" class="form-control" id="usr" style = "position: relative;">
+                    <button type="submit" class="btn btn-primary" form="review_form" value="Submit" style = "position: absolute; top: 15%; left: 47%">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
+
