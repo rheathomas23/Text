@@ -12,7 +12,7 @@ Naive Bayes and SVM for Sentiment Analysis
 
 
 
-Chat Bot (Ask Zia - Intent Classification)
+Chat Bot (Intent Classification)
 
 | Model         | Accuracy          | f1-score          | Hyperparameters 
 | ---           | ---               | ---               | ---
